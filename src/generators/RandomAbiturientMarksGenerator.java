@@ -57,13 +57,11 @@ public class RandomAbiturientMarksGenerator implements EntityGenerator<Abiturien
      * @return mark between low bound and 5 inclusive
      */
     private int generateMark(int lowBound) {
-
         while (true) {
             int mark = random.nextInt(6);
             if (mark >= lowBound) {
                 return mark;
             }
         }
-
     }
 }
